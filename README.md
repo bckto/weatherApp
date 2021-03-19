@@ -29,7 +29,7 @@ Step 3: Now the magic happens, type `npm start` on your terminal and it should s
 
 ### I did all that but it is not working... 
 
-Here comes the tricky part, if you want to run the app by yourself you will need your own key from [open Weather](https://openweathermap.org/).
+Here comes the tricky part, if you want to run the app by yourself you will need your own key from [open Weather](https://openweathermap.org/).  
 The good part is: it's completely free.   
 The bad part is: well, the next step is tedious.  
 Once you have your token you will be able to change the file `server.js`.
