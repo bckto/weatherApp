@@ -155,10 +155,19 @@ input[type="text"] {
     width: 380px;
 }
 
-.content-container {
-    background-color: #f1efef;
+.main-content-container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 33%, 97%);
+    border: 1px solid #B7B7DB;
     border-radius: 5px;
     box-shadow: 7px 10px 17px 0px rgba(184, 175, 184, 1);
+}
+
+.secondary-main-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 155px;
 }
 
 .thermalInfo {

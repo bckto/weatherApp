@@ -3,15 +3,22 @@ const informationDisplay = document.getElementById('information-display')
 function showData(data) {
     const date = new Date().toDateString()
     informationDisplay.innerHTML = `
+    <div class="main-content-container">
+    <div class="secondary-main-content-container">
     <h4> ${date} </h4> 
-    <p class="city-title"><img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" crossorigin="anonymous">${data.name},${data.sys.country}</p>
-    <span>${data.main.temp}°C</span>
-    <div class="thermalInfo">
+    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}.png" crossorigin="anonymous">
     <p> ${data.weather[0].main}, ${data.weather[0].description}.</p>
+    </div>
+    <div class="secondary-main-content-container">
+    <span class="city-title">${data.name},${data.sys.country}</span>
+    <span>${Math.round(data.main.temp)}°C</span>
+    <span>Feels like: ${Math.round(data.main.feels_like)}°C</span>
+    </div>
+    </div>
+    <div class="thermalInfo">
     <p> Humidity: ${data.main.humidity}% </p> 
-    <p>Feels like: ${data.main.feels_like}°C</p>
-    <p>Max Temperature: ${data.main.temp_max}°C</p>
-    <p>Min Temperature: ${data.main.temp_min}°C</p>
+    <p>Max Temperature: ${Math.round(data.main.temp_max)}°C</p>
+    <p>Min Temperature: ${Math.round(data.main.temp_min)}°C</p>
     <p> Wind speed : ${data.wind.speed} m/s</p>
     <p>Wind direction: ${data.wind.deg} degrees </p> 
     </div>
