@@ -168,7 +168,7 @@ input[type="text"] {
     flex-direction: row;
     border-radius: 5px;
     border: 1px solid #B7B7DB;
-    background-color: hsl(0, 33%, 97%);
+    background-color: #fff;
     box-shadow: 7px 10px 17px 0px rgba(184, 175, 184, 1);
 }
 
@@ -183,7 +183,7 @@ input[type="text"] {
     display: flex;
     flex-direction: column;
     margin: 25px 0;
-    background-color: hsl(0, 0%, 99%);
+    background-color: #fff;
     border: 1px solid #B7B7DB;
     border-radius: 5px;
     box-shadow: 7px 10px 17px 0px rgb(243, 238, 243);
