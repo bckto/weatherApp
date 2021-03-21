@@ -7,25 +7,11 @@ body {
     align-items: center;
 }
 
-h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
-}
-
-h4 {
-    display: flex;
+.date {
     justify-content: center;
-}
-
-img {
-    width: 115px;
-    float: left;
-}
-
-span {
-    font-size: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 20px 0 0 15px;
 }
 
 .search-bar {
@@ -34,7 +20,7 @@ span {
     width: fit-content;
     font-size: 14px;
     position: relative;
-    margin: 20px 15px 15px 20px;
+    margin: 20px 15px 5px 20px;
 }
 
 .city-input {
@@ -142,15 +128,38 @@ input[type="text"] {
 }
 
 .city-title {
-    margin-top: 15px;
-    font-size: 16px;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0 0 15px;
+}
+
+.city-temperature {
+    font-size: 3.1rem;
+    font-weight: 500;
+    margin: 15px 0 10px 35px;
+}
+
+.city-thermal-sensation {
+    font-size: 1.1rem;
+    margin: 5px 0 10px 30px;
+}
+
+.forecast-img {
+    width: 80px;
+    margin: 0 0 0 10px;
+}
+
+.weather-description {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    margin: 0 0 5px 10px;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     padding-top: 15px;
     width: 380px;
 }
@@ -158,9 +167,9 @@ input[type="text"] {
 .main-content-container {
     display: flex;
     flex-direction: row;
-    background-color: hsl(0, 33%, 97%);
-    border: 1px solid #B7B7DB;
     border-radius: 5px;
+    border: 1px solid #B7B7DB;
+    background-color: hsl(0, 33%, 97%);
     box-shadow: 7px 10px 17px 0px rgba(184, 175, 184, 1);
 }
 
@@ -168,14 +177,33 @@ input[type="text"] {
     display: flex;
     flex-direction: column;
     width: 155px;
+    margin-bottom: 15px;
 }
 
-.thermalInfo {
-    justify-content: center;
-    margin: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
-    padding: 10px;
+.thermal-column {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+    background-color: hsl(0, 0%, 99%);
+    border: 1px solid #B7B7DB;
+    border-radius: 5px;
+    box-shadow: 7px 10px 17px 0px rgb(243, 238, 243);
+}
+
+.thermal-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 5px;
+}
+
+.thermal-display-title {
+    font-weight: 600;
+    margin: 5px 5px 0 0;
+}
+
+.thermal-display-text {
+    margin: -10px 5px 0 0;
 }
 
 @media only screen and (max-width: 600px) {
