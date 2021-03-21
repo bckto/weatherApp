@@ -1,7 +1,7 @@
 {
-    "name": "hometask-weatherapi",
-    "version": "1.0.0",
-    "description": "* Create and setup an express server with 2 endpoints, one with /nearby and one with /search *",
+    "name": "vanillajs-weatherapi",
+    "version": "2.0.0",
+    "description": "A simple weather app using vanilla javascript and DOM manipulation with Express.",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
         "lint": "eslint"
     },
     "author": "bckto",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
         "eslint": "^7.5.0",
         "eslint-config-standard": "^16.0.2",
