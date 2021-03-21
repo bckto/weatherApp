@@ -10,8 +10,8 @@ const userId = process.env.APP_ID;
 app.use(express.static('public'));
 // First endpoint with dynamic path to use city name
 app.get('/search/:city', (req, res) => {
-    const city - name = req.params.city;
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city-name}&APPID=${userId}&units=metric`)
+    const cityName = req.params.city;
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${userId}&units=metric`)
         .then(response => response.json())
         .then(data => {
             res.status(200).send(data);
