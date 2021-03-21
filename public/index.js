@@ -8,7 +8,7 @@ function showData(data) {
     <span class="date"> ${date} </span> 
     <img src="http://openweathermap.org/img/wn/${
         data.weather[0].icon
-    }.png" class="forecast-img" crossorigin="anonymous">
+    }.png" class="forecast-img"  alt="Current weather image, ${data.weather[0].description}" crossorigin="anonymous">
     <span class="weather-description"> ${data.weather[0].main}</span>
     <span class="weather-description"> ${data.weather[0].description}.</span>
     </div>
@@ -54,7 +54,7 @@ function getCity() {
             .then((res) => res.json())
             .then((data) => showData(data))
             .catch(() => {
-                informationDisplay.innerHTML = 'Sorry, which planet is this city on?'
+                informationDisplay.innerHTML = '<span>Sorry, which planet is this city on?</span>'
             })
     })
 }
@@ -70,7 +70,7 @@ function showNearby() {
             .then((res) => res.json())
             .then((data) => showData(data))
             .catch(() => {
-                informationDisplay.innerHTML = 'Oops, no weather detected in your location!'
+                informationDisplay.innerHTML = '<span>Oops, no weather detected in your location!</span>'
             })
     }
 

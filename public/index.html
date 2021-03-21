@@ -13,11 +13,11 @@
 
 <body>
     <div id="mainContainer" class="main-content">
-
+        <h1 aria-label="Weather-app-title">Weather app</h1>
         <div class="search-bar">
             <input type="text" name="city" id="city-name" class="city-input" required />
-            <label for="city-name" class="control-label">Enter city name or zipcode</label>
-            <input type="submit" id="city-information" value="Search" class="submit-button" /></div>
+            <label for="city-name" class="control-label" aria-label="City-name-input">Enter city name or zipcode</label>
+            <input type="submit" id="city-information" aria-label="Submit-button" value="Search" class="submit-button" /></div>
 
         <div id="information-display" class="showInfo"></div>
     </div>
