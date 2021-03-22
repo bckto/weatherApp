@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-flow: column;
     align-items: center;
+    overflow: hidden;
 }
 
 .date {
@@ -169,7 +170,7 @@ input[type="text"] {
     border-radius: 5px;
     border: 1px solid #B7B7DB;
     background-color: #fff;
-    box-shadow: 7px 10px 17px 0px rgba(184, 175, 184, 1);
+    box-shadow: 7px 10px 17px 0px rgb(243, 238, 243);
 }
 
 .secondary-main-content-container {
